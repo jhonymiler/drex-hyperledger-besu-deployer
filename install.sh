@@ -122,7 +122,7 @@ EOF
         sleep $((i*10));
         /opt/besu/bin/besu --data-path=/opt/besu/data \
         --genesis-file=/opt/besu/genesis.json --rpc-http-enabled \
-        --bootnodes=enode://\$(cat /opt/besu/config/bootnode_id)@172.16.240.30:30303 --p2p-port=30303 \
+        --bootnodes=enode://\$\$(cat /opt/besu/config/bootnode_id)@172.16.240.30:30303 --p2p-port=30303 \
         --host-allowlist="*" --rpc-http-cors-origins="all"
     volumes:
       - ./config/bootnode_id:/opt/besu/config/bootnode_id

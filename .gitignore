@@ -1,11 +1,10 @@
 ./privateKey.txt
 
 bootnode/data/*
-node1/data/*
-node2/data/*
-node3/data/*
-node4/data/*
+node*
 config/bootnode_id
+config/genesis.json
 config/nodes_config.toml
 config/accounts_config.toml
 config/qbftConfigFile.json
+docker-compose.yaml
